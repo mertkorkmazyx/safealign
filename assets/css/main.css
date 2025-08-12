@@ -1549,7 +1549,7 @@ section {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-2xl);
     margin-bottom: var(--spacing-2xl);
 }
@@ -1749,6 +1749,11 @@ section {
     .footer-bottom-content {
         flex-direction: column;
         text-align: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
     }
 }
 
