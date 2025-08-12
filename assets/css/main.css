@@ -564,6 +564,8 @@ body {
 
 .hero-text {
     color: var(--text-light);
+    margin-left: -10%;
+    max-width: 90%;
 }
 
 .hero-title {
@@ -1684,6 +1686,11 @@ section {
     :root {
         --spacing-4xl: 3rem;
         --spacing-3xl: 2rem;
+    }
+    
+    .hero-text {
+        margin-left: 0;
+        max-width: 100%;
     }
     
     .hero-buttons {
