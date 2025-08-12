@@ -1,0 +1,58 @@
+{
+  "name": "safealign-website",
+  "version": "1.0.0",
+  "description": "SAFEALIGN - Professional Ship Propulsion System Alignment Services Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o assets/css/main.min.css assets/css/main.css assets/css/animations.css",
+    "minify-js": "uglifyjs assets/js/main.js assets/js/animations.js -o assets/js/bundle.min.js --compress --mangle",
+    "optimize-images": "imagemin assets/images/* --out-dir=assets/images/optimized",
+    "test": "echo \"No tests specified\"",
+    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html",
+    "validate-html": "html-validate index.html",
+    "lint-css": "stylelint assets/css/*.css",
+    "lint-js": "eslint assets/js/*.js"
+  },
+  "keywords": [
+    "maritime",
+    "ship",
+    "alignment",
+    "laser",
+    "propeller",
+    "engineering",
+    "website",
+    "responsive",
+    "modern"
+  ],
+  "author": "SAFEALIGN",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
+    "lighthouse": "^10.4.0",
+    "html-validate": "^8.7.4",
+    "stylelint": "^15.11.0",
+    "eslint": "^8.55.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/safealign/website.git"
+  },
+  "homepage": "https://safealign.com.tr",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
