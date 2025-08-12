@@ -291,7 +291,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: calc(var(--spacing-md) * 1.1) 0;
+    padding: calc(var(--spacing-md) * 1.1) var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .nav-logo {
@@ -300,6 +303,7 @@ body {
     gap: var(--spacing-sm);
     color: var(--text-light);
     text-decoration: none;
+    margin-left: var(--spacing-md);
 }
 
 .logo-img {
@@ -407,6 +411,7 @@ body {
     display: flex;
     align-items: center;
     gap: var(--spacing-lg);
+    margin-right: var(--spacing-md);
 }
 
 .language-switcher {
@@ -636,7 +641,7 @@ body {
 .hero-video-frame {
     position: absolute;
     top: 20%;
-    left: 65%;
+    left: 70%;
     transform: translate(-50%, -50%);
     width: 700px;
     height: 394px;
@@ -1671,7 +1676,7 @@ section {
         width: 540px;
         height: 304px;
         top: 20%;
-        left: 62%;
+        left: 67%;
     }
 }
 
